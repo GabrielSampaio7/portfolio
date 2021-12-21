@@ -1,0 +1,52 @@
+@media (max-width: 320px) {
+    
+}
+
+@media (max-width: 375px) {
+
+    .container-primary--title h1{
+        font-size: 4.00rem;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .container-primary--logo img{
+        display: none;
+    }
+
+    .container-secondary--helloworld{
+        display: none;
+    }
+
+    .container-secondary--aboutme{
+        width: 100%;
+    }
+
+    .container-secondary--aboutme div > p{
+        font-size: 1rem;
+    }
+
+    .container-tertiary section{
+        flex-direction: column;
+    }
+
+    .container-tertiary section .card{
+        margin-top: 15px;
+    }
+
+    .max-width{
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container-primary--logo img{
+        max-width: 300px;
+    }
+
+    .container-secondary--aboutme{
+        margin-left: 10px;
+    }
+}
