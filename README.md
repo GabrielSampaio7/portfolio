@@ -6,3 +6,7 @@
 
 ## Logo Crédito
 Logo: https://undraw.co/search (developer activity)
+
+## Créditos
+
+Projeto inspirado no @iuricode.
