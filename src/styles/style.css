@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, p{
 }
 
 .wrapper{
-    width: 100%;
     margin: 0 10px;
 }
 
@@ -122,10 +121,6 @@ header .max-width nav {
     -webkit-transition: 1s all ease;
     transition: 1s all ease;
   }
-
-  .nav-list.active li{
-    font-size: 50px;
-  }
   
   @-webkit-keyframes navLinkFade {
     from {
@@ -196,6 +191,10 @@ header .max-width nav {
     }
     .mobile-menu {
       display: block;
+    }
+
+    .nav-list.active li{
+      font-size: 50px;
     }
   }
 
@@ -316,7 +315,6 @@ main{
 }
 
 .container-background-light{
-    width: 100%;
     width: 100%;
     background-color: #17161C;
 }
