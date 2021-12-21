@@ -1,0 +1,280 @@
+body{
+    background-color: #131218;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 0;
+}
+
+.dot{
+    font-size: 40px;
+    color: #2D31FF;
+}
+
+.gray{
+    color: #595377;
+}
+
+.white{
+    color: white;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 10px;
+}
+
+.nav-title{
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+}
+
+.nav-title-key{
+    color: #2D31FF;
+    margin: 0 5px;
+    font-weight: 900;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+
+    background: #17161C 0.6;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.max-width{
+    max-width: 1140px !important;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul > li > a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.title-name{
+    letter-spacing: 2px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-primary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+
+    height: 90vh;
+    width: 100%;
+}
+
+.container-primary--title h1{
+    font-size: 100px;
+}
+
+.container-primary--title p{
+    font-size: 30px;
+}
+
+.container-primary--logo img{
+    max-width: 500px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.container-background-light{
+    width: 100%;
+    width: 100%;
+    background-color: #17161C;
+}
+
+.container-secondary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 40vh;
+}
+
+.container-secondary--helloworld{
+    font-size: 100px;
+    font-weight: bold;
+    color: #22202D;
+
+    max-width: 400px;
+    margin: 60px auto;
+    color: #fff;
+}
+
+.container-secondary--aboutme{
+    width: 50%;
+}
+
+.container-secondary--aboutme h1{
+    font-size: 40px;
+}
+
+.container-secondary--aboutme div > p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container-tertiary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.container-tertiary--title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 20vh;
+}
+
+.container-tertiary section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10vh;
+    border-top: 1px #22202D solid;
+}
+
+.footer span{
+    font-weight: 600;
+}
+
+.footer-social-medias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    width: 200px;
+}
+
+.icons{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform .3s;
+}
+
+.icons a{
+    color: white;
+}
+
+.icons:hover{
+    transform: scale(1.2);
+}
+
+.icons::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #2D31FF, #2D31FF);
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(100%, 100%);
+    transition: all .4s;
+}
+
+.icons:hover::before{
+    transform: translate(0);
+    animation: animate .4s linear;
+}
+
+@keyframes animate{
+    0%, 100%{
+        width: 100%;
+        height: 100%;
+    }
+    50%{
+        width: 50%;
+        height: 50%;
+    }
+}
