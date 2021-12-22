@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, p{
     margin: 0 10px;
 }
 
-header .max-width nav {
+header .max-width {
     padding: 0px 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -46,33 +46,33 @@ header .max-width nav {
   }
   
   @media screen and (max-width: 1024px) {
-    header .max-width nav {
+    header .max-width {
       padding: 0px 25px;
     }
   }
   
-  header .max-width nav img {
+  header .max-width img {
     width: 150px;
   }
   
-  header .max-width nav .nav-list {
+  header .max-width .nav-list {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   
-  header .max-width nav .nav-list li {
+  header .max-width .nav-list li {
     margin-left: 50px;
   }
   
-  header .max-width nav .nav-list li a {
+  header .max-width .nav-list li a {
     color: #c9c9c9;
     font-size: 1rem;
     position: relative;
   }
   
-  header .max-width nav .nav-list li a::after {
+  header .max-width .nav-list li a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -91,14 +91,14 @@ header .max-width nav {
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
   
-  header .max-width nav .nav-list li a:hover::after {
+  header .max-width .nav-list li a:hover::after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
     -webkit-transform-origin: bottom left;
             transform-origin: bottom left;
   }
   
-  header .max-width nav .nav-list li a:hover {
+  header .max-width .nav-list li a:hover {
     color: #fafafa;
   }
   
@@ -182,11 +182,11 @@ header .max-width nav {
       padding-top: 100px;
       visibility: hidden;
     }
-    header .max-width nav .nav-list li {
+    header .max-width .nav-list li {
       opacity: 0;
       margin: 0px 0px 50px 0px;
     }
-    header .max-width nav .nav-list li a {
+    header .max-width .nav-list li a {
       font-size: 2.4rem;
     }
     .mobile-menu {
