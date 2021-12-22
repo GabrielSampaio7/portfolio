@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
     background-color: #131218;
     color: white;
@@ -99,7 +103,7 @@ header .max-width {
   }
   
   header .max-width .nav-list li a:hover {
-    color: #fafafa;
+    color: white;
   }
   
   .mobile-menu {
@@ -179,7 +183,6 @@ header .max-width {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding-top: 100px;
       visibility: hidden;
     }
     header .max-width .nav-list li {
@@ -307,7 +310,7 @@ main{
         transform: translateY(0px);
     }
     50%{
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
     100%{
         transform: translateY(0px);
@@ -369,6 +372,10 @@ main{
     height: 20vh;
 }
 
+.container-tertiary--title h1{
+  font-size: 2.5rem;
+}
+
 .container-tertiary section{
     display: flex;
     flex-direction: row;
@@ -376,6 +383,7 @@ main{
     align-items: center;
 
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .footer{

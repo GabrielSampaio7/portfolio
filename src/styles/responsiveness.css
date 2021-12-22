@@ -39,6 +39,10 @@
         margin: 10px;
     }
 
+    .footer span{
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 768px) {
