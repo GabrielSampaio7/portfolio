@@ -2,7 +2,7 @@
 
 ## Imagens do Projeto
 
-<img src="img1.png">
+<img src="mobile.png">
 
 ## Logo Crédito
 Logo: https://undraw.co/search (developer activity)
